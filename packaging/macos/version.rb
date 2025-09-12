@@ -5,21 +5,21 @@
 class Version < Formula
   desc "Cross-platform semantic version parsing, validation, and ordering CLI utility"
   homepage "https://github.com/AlexBurnes/version-go"
-  version "0.5.9"
+  version "0.5.10"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/AlexBurnes/version-go/releases/download/v0.5.9/version_0.5.9_darwin_amd64.tar.gz"
-      sha256 "c14fa1480f6b60feeb0a13398a4efb68a3d7e9cdd14c0d449d4110ddda61aeaf"
+      url "https://github.com/AlexBurnes/version-go/releases/download/v0.5.10/version_0.5.10_darwin_amd64.tar.gz"
+      sha256 "4ebe575a0ea75b987aa036d5cd520ca7ad9a94cba399f3e625b528d29f20da31"
 
       def install
         bin.install "version"
       end
     end
     on_arm do
-      url "https://github.com/AlexBurnes/version-go/releases/download/v0.5.9/version_0.5.9_darwin_arm64.tar.gz"
-      sha256 "8e81de37721b6e8301e2096a1530fcf5370e591c677546015e7438070bda86d4"
+      url "https://github.com/AlexBurnes/version-go/releases/download/v0.5.10/version_0.5.10_darwin_arm64.tar.gz"
+      sha256 "89af7569133c144cd9237d2911f40947428a77cde1b102619eddfc9a6a0bc314"
 
       def install
         bin.install "version"
@@ -30,8 +30,8 @@ class Version < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AlexBurnes/version-go/releases/download/v0.5.9/version_0.5.9_linux_amd64.tar.gz"
-        sha256 "d7d46f223e87a6fd2570e0ef30aec8ba27f361158f6a2253a2b43320937afcde"
+        url "https://github.com/AlexBurnes/version-go/releases/download/v0.5.10/version_0.5.10_linux_amd64.tar.gz"
+        sha256 "eef6b7cad2ae6f3c7d685113063fa18d7f5e50dca91a8e128c962b63354bba76"
 
         def install
           bin.install "version"
@@ -40,8 +40,8 @@ class Version < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AlexBurnes/version-go/releases/download/v0.5.9/version_0.5.9_linux_arm64.tar.gz"
-        sha256 "7ecfd581e1da6fd9f50ee6e9c2c7e5ad97b0459d848b0a7c607653d619cea653"
+        url "https://github.com/AlexBurnes/version-go/releases/download/v0.5.10/version_0.5.10_linux_arm64.tar.gz"
+        sha256 "378206d64b1942b5210efa5bbb59cb9051a559cfd007ac63818512a62a01b596"
 
         def install
           bin.install "version"
