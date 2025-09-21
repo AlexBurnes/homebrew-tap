@@ -5,21 +5,21 @@
 class PrePush < Formula
   desc "Cross-platform Git pre-push hook runner with DAG-based execution"
   homepage "https://github.com/AlexBurnes/pre-push"
-  version "1.4.0"
+  version "1.3.0"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/AlexBurnes/pre-push/releases/download/v1.4.0/pre-push_macos_amd64.tar.gz"
-      sha256 "9b1198107af9759afacd73a2ffbddcc9b904a819e1c72decb4da2ec2e6376ba3"
+      url "https://github.com/AlexBurnes/pre-push/releases/download/v1.3.0/pre-push_macos_amd64.tar.gz"
+      sha256 "0c786b9b5f59c90e06ce27d06fb7ab85be82da6cc0420b8c48b30e1e0621d602"
 
       def install
         bin.install "pre-push"
       end
     end
     on_arm do
-      url "https://github.com/AlexBurnes/pre-push/releases/download/v1.4.0/pre-push_macos_arm64.tar.gz"
-      sha256 "2709b5c02e780c5426e8882dd8d94abc9b699d206c800ada23a335e1f496b264"
+      url "https://github.com/AlexBurnes/pre-push/releases/download/v1.3.0/pre-push_macos_arm64.tar.gz"
+      sha256 "e4c780b95af2dcb078ef90aee409a3c330601e1e0ae30b25074a2d9047db2858"
 
       def install
         bin.install "pre-push"
@@ -30,8 +30,8 @@ class PrePush < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AlexBurnes/pre-push/releases/download/v1.4.0/pre-push_linux_amd64.tar.gz"
-        sha256 "69f28e4aad438fc2a359adeb0fc15e4ba24af882fad81c51460e26ee5a458cc6"
+        url "https://github.com/AlexBurnes/pre-push/releases/download/v1.3.0/pre-push_linux_amd64.tar.gz"
+        sha256 "48accf1d368318fdc3323cd874619719d45844a2e796dc60681a7fd9e185f3c7"
 
         def install
           bin.install "pre-push"
@@ -40,8 +40,8 @@ class PrePush < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AlexBurnes/pre-push/releases/download/v1.4.0/pre-push_linux_arm64.tar.gz"
-        sha256 "79e1a8420ba9f1347d2999e634c123cb84789faf4c10a37d6179fd5e234b98cc"
+        url "https://github.com/AlexBurnes/pre-push/releases/download/v1.3.0/pre-push_linux_arm64.tar.gz"
+        sha256 "f39bdbb9daedf77ab7d7788649805871f32531fe7a09202fd91afb3fff373362"
 
         def install
           bin.install "pre-push"
