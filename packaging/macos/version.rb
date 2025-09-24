@@ -5,21 +5,21 @@
 class Version < Formula
   desc "Cross-platform semantic version parsing, validation, and ordering CLI utility"
   homepage "https://github.com/AlexBurnes/version-go"
-  version "1.2.0"
+  version "1.2.1"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/AlexBurnes/version-go/releases/download/v1.2.0/version_macos_amd64.tar.gz"
-      sha256 "592a0f58e512c3f9c5f89aa8efa945a4ce2191f830f893a4c82f3b2ebcba5c55"
+      url "https://github.com/AlexBurnes/version-go/releases/download/v1.2.1/version_macos_amd64.tar.gz"
+      sha256 "aaeff64b8042660697a22a38d7a23210ba3df1e6159b71dc6787acc4131505bf"
 
       def install
         bin.install "version"
       end
     end
     on_arm do
-      url "https://github.com/AlexBurnes/version-go/releases/download/v1.2.0/version_macos_arm64.tar.gz"
-      sha256 "0dfc081f288789dd86454dccaa8453cf3f36492b9bde9f51fae6cae3425d5195"
+      url "https://github.com/AlexBurnes/version-go/releases/download/v1.2.1/version_macos_arm64.tar.gz"
+      sha256 "02f6e922b2e5c6420afbe6fb8de53cd6de00a9c1af0f6f70598e3f7aaa5afec5"
 
       def install
         bin.install "version"
@@ -30,8 +30,8 @@ class Version < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AlexBurnes/version-go/releases/download/v1.2.0/version_linux_amd64.tar.gz"
-        sha256 "6dd6121f1aad455067be6cf806f06eb20545f3e7ecec78e358c83d4c233de839"
+        url "https://github.com/AlexBurnes/version-go/releases/download/v1.2.1/version_linux_amd64.tar.gz"
+        sha256 "dd4cf9c38da6715c9ba8bf8ed1f00254c1fde4c05547f74f2256dd0c3e504878"
 
         def install
           bin.install "version"
@@ -40,8 +40,8 @@ class Version < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AlexBurnes/version-go/releases/download/v1.2.0/version_linux_arm64.tar.gz"
-        sha256 "0d5b84060a72bb576c3708ca29d65a26b7400d2ec9612f2fcd79e858a6d884dc"
+        url "https://github.com/AlexBurnes/version-go/releases/download/v1.2.1/version_linux_arm64.tar.gz"
+        sha256 "ae229684e06672eae4bc6549e4c3150241b312353a8af8a36579b7d187b9e27f"
 
         def install
           bin.install "version"
