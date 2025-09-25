@@ -5,21 +5,21 @@
 class Buildfab < Formula
   desc "Go-based automation runner with DAG-based execution"
   homepage "https://github.com/AlexBurnes/buildfab"
-  version "0.15.1"
+  version "0.15.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/AlexBurnes/buildfab/releases/download/v0.15.1/buildfab_macos_amd64.tar.gz"
-      sha256 "c829ae23ac76e8e75135895f33cace471124e62538d78d67cac251d2d923ecb5"
+      url "https://github.com/AlexBurnes/buildfab/releases/download/v0.15.2/buildfab_darwin_amd64.tar.gz"
+      sha256 "98e7afa7751a2e57dfd1ae1e27e60ae6389521b4fa0c762f8c4c5360a465f965"
 
       def install
         bin.install "buildfab"
       end
     end
     on_arm do
-      url "https://github.com/AlexBurnes/buildfab/releases/download/v0.15.1/buildfab_macos_arm64.tar.gz"
-      sha256 "ae3c6c40dfeed2dcb37da128d36979bcf68b06208fcf01872d030c5b1c9b40e1"
+      url "https://github.com/AlexBurnes/buildfab/releases/download/v0.15.2/buildfab_darwin_arm64.tar.gz"
+      sha256 "20c05b19068ab70fc3d2e6e4e1a3b71e2b29c575450b70959cad95c8e3e9d24c"
 
       def install
         bin.install "buildfab"
@@ -30,8 +30,8 @@ class Buildfab < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AlexBurnes/buildfab/releases/download/v0.15.1/buildfab_linux_amd64.tar.gz"
-        sha256 "6bafbf2e0c99356bf13286dfdac0aae215696c21acf2ad97c483a42f1cbb0fe6"
+        url "https://github.com/AlexBurnes/buildfab/releases/download/v0.15.2/buildfab_linux_amd64.tar.gz"
+        sha256 "fb6f9c05052046cf05375d608315a5f64ed6d7ac38b5c010fed557a9c1043679"
 
         def install
           bin.install "buildfab"
@@ -40,8 +40,8 @@ class Buildfab < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AlexBurnes/buildfab/releases/download/v0.15.1/buildfab_linux_arm64.tar.gz"
-        sha256 "b3236efbf140770252df9398cdeaad1e49bdf669733080f889f2d3348816f7d8"
+        url "https://github.com/AlexBurnes/buildfab/releases/download/v0.15.2/buildfab_linux_arm64.tar.gz"
+        sha256 "451b7ab5533b51cb2fedc9f2ae60f1ef8984269e11cf93c40d6f2d59e61ad123"
 
         def install
           bin.install "buildfab"
