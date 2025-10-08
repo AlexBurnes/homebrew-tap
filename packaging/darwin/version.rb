@@ -5,21 +5,21 @@
 class Version < Formula
   desc "Cross-platform semantic version parsing, validation, and ordering CLI utility"
   homepage "https://github.com/AlexBurnes/version-go"
-  version "1.4.1"
+  version "1.4.2"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/AlexBurnes/version-go/releases/download/v1.4.1/version_darwin_amd64.tar.gz"
-      sha256 "19dec66e98d50817c17873d30d712148429f14d3b5fc48a8b208beddcd2f2665"
+      url "https://github.com/AlexBurnes/version-go/releases/download/v1.4.2/version_darwin_amd64.tar.gz"
+      sha256 "755286bd53da80c5fd8a3629af06f59a94a40e37bcc060524648f0762d9c6f53"
 
       def install
         bin.install "version"
       end
     end
     on_arm do
-      url "https://github.com/AlexBurnes/version-go/releases/download/v1.4.1/version_darwin_arm64.tar.gz"
-      sha256 "de322ffd8196dace59eea7c1fcb79ec977300ed121711520e94ffd0fcc990cff"
+      url "https://github.com/AlexBurnes/version-go/releases/download/v1.4.2/version_darwin_arm64.tar.gz"
+      sha256 "c30ab610cf87d19c858971e00f74bcb3c958ffaa77aae14eb6b4c19a72ee0d62"
 
       def install
         bin.install "version"
@@ -30,8 +30,8 @@ class Version < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AlexBurnes/version-go/releases/download/v1.4.1/version_linux_amd64.tar.gz"
-        sha256 "15828b9d483ade0c1239f913181f21d9b1deae66cb56b7e435f7ada0e54c5ace"
+        url "https://github.com/AlexBurnes/version-go/releases/download/v1.4.2/version_linux_amd64.tar.gz"
+        sha256 "77f986cf551656e1e19eedb2779d96ebcf8fc676b53b729ad98e9c5eeca0af93"
 
         def install
           bin.install "version"
@@ -40,8 +40,8 @@ class Version < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AlexBurnes/version-go/releases/download/v1.4.1/version_linux_arm64.tar.gz"
-        sha256 "dcaa6e4bcbb0437878b037bb54165d96cae800c41ae12e3bf56dcae9cc720fc9"
+        url "https://github.com/AlexBurnes/version-go/releases/download/v1.4.2/version_linux_arm64.tar.gz"
+        sha256 "0c1b8f668d87228bfba9ad5fb15fe9d7b8d2c545ee532eec64b54b684f39f45d"
 
         def install
           bin.install "version"
