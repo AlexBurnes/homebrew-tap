@@ -11,7 +11,7 @@ class PrePush < Formula
   on_macos do
     on_intel do
       url "https://github.com/AlexBurnes/pre-push/releases/download/v1.9.0/pre-push_darwin_amd64.tar.gz"
-      sha256 "263ab8be7995ea3c0d7bb1afaccfb6db6639185fd156c1659fd2391a4f1a226a"
+      sha256 "35b0950bc3afc1a411b9b901f366f05d9f671a88ccdf42651bc5f136cbaa4ba2"
 
       def install
         bin.install "pre-push"
@@ -19,7 +19,7 @@ class PrePush < Formula
     end
     on_arm do
       url "https://github.com/AlexBurnes/pre-push/releases/download/v1.9.0/pre-push_darwin_arm64.tar.gz"
-      sha256 "acc42fc862a580ee921c7fc7d5e5ebc72d8f1d3bc425a0386aa9c2cf6a17fb72"
+      sha256 "3ff6880918a4a87b2eedab226345d1e7f9b5251b8bbe4f394170b3312c9130ad"
 
       def install
         bin.install "pre-push"
@@ -31,7 +31,7 @@ class PrePush < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/AlexBurnes/pre-push/releases/download/v1.9.0/pre-push_linux_amd64.tar.gz"
-        sha256 "030b45e448e35b7279a0547365392e34f2157f0530a798cd2f0414666eb452c8"
+        sha256 "ce10cfbd1ee98e041f49ecacf7dc084d9d40472af2d66b9ba5f2b5e678673ae5"
 
         def install
           bin.install "pre-push"
@@ -41,7 +41,7 @@ class PrePush < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/AlexBurnes/pre-push/releases/download/v1.9.0/pre-push_linux_arm64.tar.gz"
-        sha256 "f1c0e1b375525bbe88ad54cc5f9bb8dd2aa6f6afa585fcb0d3f09a7f8ec5b105"
+        sha256 "b266775dbdcfceb1575539284854e9edac5efdc8bdd9510be1e7eaf5b1ecfdf2"
 
         def install
           bin.install "pre-push"
