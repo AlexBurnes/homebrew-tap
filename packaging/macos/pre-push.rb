@@ -5,21 +5,21 @@
 class PrePush < Formula
   desc "Cross-platform Git pre-push hook runner with DAG-based execution"
   homepage "https://github.com/AlexBurnes/pre-push"
-  version "1.9.1"
+  version "1.9.2"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/AlexBurnes/pre-push/releases/download/v1.9.1/pre-push_darwin_amd64.tar.gz"
-      sha256 "f978c1b4caab319f25957aae5543f592248a8f18ed24173ae3acb805b1b5cbee"
+      url "https://github.com/AlexBurnes/pre-push/releases/download/v1.9.2/pre-push_darwin_amd64.tar.gz"
+      sha256 "3326316b2ddc24e45cd3bb58cc47cc255373b0491c039773975d1a5d07183321"
 
       def install
         bin.install "pre-push"
       end
     end
     on_arm do
-      url "https://github.com/AlexBurnes/pre-push/releases/download/v1.9.1/pre-push_darwin_arm64.tar.gz"
-      sha256 "40b8577fdc0317a18a440b46f137e390e2c51d53a8de411bc3b7d66fa757a18a"
+      url "https://github.com/AlexBurnes/pre-push/releases/download/v1.9.2/pre-push_darwin_arm64.tar.gz"
+      sha256 "61a9388ec563425db8745c2f9ada86a1f3c05c7e69737f42a2cff30fa2d1288b"
 
       def install
         bin.install "pre-push"
@@ -30,8 +30,8 @@ class PrePush < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AlexBurnes/pre-push/releases/download/v1.9.1/pre-push_linux_amd64.tar.gz"
-        sha256 "99ca4a15dd60a7fc12b00b160716dc8e31138e58074a526c2c30977499c28983"
+        url "https://github.com/AlexBurnes/pre-push/releases/download/v1.9.2/pre-push_linux_amd64.tar.gz"
+        sha256 "95d0afeb0debccd72f9c036b3c2f47860cffc1cfad5a73fed8a4766f8dea8287"
 
         def install
           bin.install "pre-push"
@@ -40,8 +40,8 @@ class PrePush < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/AlexBurnes/pre-push/releases/download/v1.9.1/pre-push_linux_arm64.tar.gz"
-        sha256 "d408b46e8032e2247c89a89b82845dcbebaa2b590dbd97422b38006890bf7179"
+        url "https://github.com/AlexBurnes/pre-push/releases/download/v1.9.2/pre-push_linux_arm64.tar.gz"
+        sha256 "369ec8fe71977f1bbf81647e2b676220d7e6d907714ca261d621b28d35c873a3"
 
         def install
           bin.install "pre-push"
