@@ -11,7 +11,7 @@ class Buildfab < Formula
   on_macos do
     on_intel do
       url "https://github.com/AlexBurnes/buildfab/releases/download/v0.30.4/buildfab_darwin_amd64.tar.gz"
-      sha256 "fcfa83155216c469f63c4839627d9afa999dcf78d9a75762f5018eca18f43105"
+      sha256 "e49b9cff47268a9a230be361a801925a20e76e956b180e20e325189b2f82b1ee"
 
       def install
         bin.install "buildfab"
@@ -19,7 +19,7 @@ class Buildfab < Formula
     end
     on_arm do
       url "https://github.com/AlexBurnes/buildfab/releases/download/v0.30.4/buildfab_darwin_arm64.tar.gz"
-      sha256 "3f11134f4c881aaf7fe298f8b604e6aa53ff7bd56ab8e77e760ba5aee4b62e59"
+      sha256 "86bfae81560317e54f7b67d9b54b3f4566d02e9f8882cf1887fad9ef17726fb2"
 
       def install
         bin.install "buildfab"
@@ -31,7 +31,7 @@ class Buildfab < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/AlexBurnes/buildfab/releases/download/v0.30.4/buildfab_linux_amd64.tar.gz"
-        sha256 "4ba0fdcd7c8f7ef686b166eafcbfb998cbffbbb4a35729e27e2bb3bf57ffc368"
+        sha256 "fa59c64cf04cb5f9dee4b345d9ddded1a2ddcff255e01aad88b12e0802bd16c2"
 
         def install
           bin.install "buildfab"
@@ -41,7 +41,7 @@ class Buildfab < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/AlexBurnes/buildfab/releases/download/v0.30.4/buildfab_linux_arm64.tar.gz"
-        sha256 "1ce3affcfa0bf4ac6837719b92d796520cbbf58ccda7f658f423f9b09d2e05dc"
+        sha256 "3f4d0c07b03546bb6ed3a6f2382bb3945581793e4e1a9140f4548ade83168eb7"
 
         def install
           bin.install "buildfab"
